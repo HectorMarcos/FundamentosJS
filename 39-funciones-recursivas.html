@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         /* 
+            13 /_4___
+
+            13 - 4 = 9     1
+            9 - 4 = 5      1
+            5 - 4 = 1      1
+            1 - 4 = -3
+         */
+
+         function divisionEntera(dividendo, divisor) {
+            if (dividendo < divisor) {
+               return 0;
+            } else {
+               return 1 + divisionEntera(dividendo - divisor, divisor);
+            }
+         }
+      </script>
+   </body>
+</html>

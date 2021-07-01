@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const hector = {
+            nombre: 'Hector',
+            apellido: 'Marcos',
+         };
+
+         const yesika = {
+            nombre: 'Yesika',
+            apellido: 'Cortés',
+         };
+
+         function saludar(saludo = 'Hola') {
+            console.log(`${saludo}, mi nombre es ${this.nombre}`);
+         }
+
+         /* const saludarAHector = saludar.bind(hector);
+         const saludarAYesika = saludar.bind(yesika); */
+
+         //setTimeout(saludar.bind(hector, 'Hola makina'), 1000);
+
+         //saludar.call(hector, 'Hola crack');
+         saludar.apply(hector, ['Hola teniente']);
+      </script>
+   </body>
+</html>
